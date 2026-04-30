@@ -12,8 +12,10 @@ int main(){
 
     if(edad >= 18){
         cout << "Perfecto, eres mayor de edad" << endl;
-    }else{
+    }else if(edad < 18 && edad > 0){
         cout << "Ojo, parece que eres menor de edad" << endl;
+    }else{
+        cout << "Ingresa una edad valida" << endl;
     }
 
     return 0;

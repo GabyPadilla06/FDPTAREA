@@ -6,7 +6,7 @@ int main(){
 
     string contrasena, verificacionContrasena;
 
-    cout << "Bienvenido a la etapa de creación de passwords" << endl;
+    cout << "Bienvenido a la etapa de creacion de passwords" << endl;
     cout << "Ingresa tu nueva password: " << endl;
     cin >> contrasena;
 

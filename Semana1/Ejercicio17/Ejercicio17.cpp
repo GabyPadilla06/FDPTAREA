@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     int edad;
 
@@ -10,11 +11,20 @@ int main(){
     cout << "Ingrese la edad del visitante: " << endl;
     cin >> edad;
 
-    if(edad < 5){
+    if (edad < 0)
+    {
+        cout << "Ingrese una edad valida" << endl;
+    }
+    else if (edad < 5)
+    {
         cout << "La entrada del visitante es gratis" << endl;
-    }else if(edad >= 5 && edad <= 12){
+    }
+    else if (edad <= 12)
+    {
         cout << "La entrada del visitante costaria $5" << endl;
-    }else{
+    }
+    else
+    {
         cout << "La entrada del visitante costaria $10" << endl;
     }
 

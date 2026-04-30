@@ -12,8 +12,10 @@ int main(){
 
     if(calificacion >= 6.0){
         cout << "Felicidades, aprobaste" << endl;
-    }else{
+    }else if(calificacion < 6.0 && calificacion >= 0){
         cout << "Lo siento, reprobaste" << endl;
+    }else{
+        cout << "Ingresa una calificacion valida" << endl;
     }
 
     return 0;

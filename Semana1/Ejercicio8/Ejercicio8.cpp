@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     string usuario;
     string contrasena;
@@ -10,19 +11,20 @@ int main(){
     string usuarioPredeterminado = "Diana";
     string contrasenaPredeterminada = "Diana#2006";
 
-    cout << "Bienvenido, inicia sesion" << endl;;
+    cout << "Bienvenid@, inicia sesion" << endl;
     cout << "Por favor ingresa tu nombre de usuario: " << endl;
     cin >> usuario;
 
     cout << "Por favor ingresa tu password: " << endl;
     cin >> contrasena;
 
-    if(usuario != usuarioPredeterminado){
-        cout << "Error, por favor revisa tu nombre de usuario" << endl;
-    }else if(contrasena != contrasenaPredeterminada){
-        cout << "Error, por favor revisa tu password" << endl;
-    }else{
-        cout << "Inicio de sesion existoso, bienvenid@ " << usuario << endl;
+    if (usuario == usuarioPredeterminado && contrasena == contrasenaPredeterminada)
+    {
+        cout << "Inicio de sesion exitoso, bienvenid@ " << usuario << endl;
+    }
+    else
+    {
+        cout << "Error, usuario o contrasena incorrectos." << endl;
     }
 
     return 0;

@@ -6,7 +6,6 @@ int main(){
 
     string usuario;
     string contrasena;
-    int numeroIntentos = 3;
 
     string usuarioPredeterminado = "Diana";
     string contrasenaPredeterminada = "Diana#2006";
@@ -48,3 +47,5 @@ int main(){
 
     return 0;
 }
+
+// Se pudo, pero a lo chabacan, no lo recomiendo

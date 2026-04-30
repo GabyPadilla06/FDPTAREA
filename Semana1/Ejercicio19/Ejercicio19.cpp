@@ -2,19 +2,29 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     float consumo;
 
     cout << "Bienvenido a la calculadora de tarifas" << endl;
-    cout << "INgresa tu consumo de energia: " << endl;
+    cout << "Ingresa tu consumo de energia: " << endl;
     cin >> consumo;
 
-    if(consumo < 100.0){
+    if (consumo <= 0)
+    {
+        cout << "Ingresa un consumo de energia valido" << endl;
+    }
+    else if (consumo < 100.0)
+    {
         cout << "La tarifa es baja" << endl;
-    }else if(consumo >= 100.0 && consumo <= 200.0){
+    }
+    else if (consumo <= 200.0)
+    {
         cout << "La tarifa es media" << endl;
-    }else{
+    }
+    else
+    {
         cout << "La tarifa es alta" << endl;
     }
 
