@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 
-    double salario, impuesto = 0.0, porcentaje = 0.0;
+    double salario, impuesto, porcentaje;
 
     cout << "Ingresa tu salario mensual: " << endl;
     cin >> salario;
@@ -43,36 +43,36 @@ int main()
     case 1:
         porcentaje = 0;
         impuesto = 0;
-        cout << "Rango: $0 - $1,000 = Libre de impuestos" << endl;
+        cout << "Rango de ($0 - $1,000). Libre de impuestos" << endl;
         break;
     case 2:
         porcentaje = 10;
         impuesto = salario * 0.10;
-        cout << "Rango: $1,001 - $3,000 = Tasa del 10%" << endl;
+        cout << "Rango de ($1,001 - $3,000) con tasa del 10%" << endl;
         break;
     case 3:
         porcentaje = 20;
         impuesto = salario * 0.20;
-        cout << "Rango: $3,001 - $6,000 = Tasa del 20%" << endl;
+        cout << "Rango de ($3,001 - $6,000) con tasa del 20%" << endl;
         break;
     case 4:
         porcentaje = 30;
         impuesto = salario * 0.30;
-        cout << "Rango: $6,001 - $10,000 = Tasa del 30%" << endl;
+        cout << "Rango de ($6,001 - $10,000) con tasa del 30%" << endl;
         break;
     case 5:
         porcentaje = 35;
         impuesto = salario * 0.35;
-        cout << "Rango: Más de $10,000 = Tasa del 35%" << endl;
+        cout << "Rango de ($10,000) con tasa del 35%" << endl;
         break;
     }
 
-    double salarioNeto = salario - impuesto;
+    double salarioTotal = salario - impuesto;
 
-    cout << "Salario bruto   : $" << salario << endl;
+    cout << "Salario : $" << salario << endl;
     cout << "Tasa de impuesto: " << porcentaje << "%" << endl;
-    cout << "Impuesto a pagar: $" << impuesto << endl;
-    cout << "Salario neto    : $" << salarioNeto << endl;
+    cout << "Impuesto: $" << impuesto << endl;
+    cout << "Salario total    : $" << salarioTotal << endl;
 
     return 0;
 }

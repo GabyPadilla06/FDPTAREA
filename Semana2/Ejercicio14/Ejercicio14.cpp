@@ -35,7 +35,7 @@ int main(){
         cout << "Clasificacion PG-13 (Mayores de 13)";
         break;
     case 3:
-        cout << "Clasificacion R (Restringido, +17)";
+        cout << "Clasificacion R (Restringido: +17)";
         break;
     }
 
