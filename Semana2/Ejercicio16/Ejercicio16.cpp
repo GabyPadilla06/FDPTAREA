@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
 
     int opcion;
 
@@ -21,6 +22,33 @@ int main(){
     if (opcion <= 0 || opcion > 7)
     {
         cout << "Ingresa una opcion dentro del rango de opciones" << endl;
+    }
+
+    switch (opcion)
+    {
+    case 1:
+        cout << "Este dia tienes elementos y fundamentos";
+        break;
+    case 2:
+        cout << "Este dia tienes precalculo y discreta";
+        break;
+    case 3:
+        cout << "Este dia tienes elementos y fundamentos";
+        break;
+    case 4:
+        cout << "Este dia tienes precalculo y discreta";
+        break;
+    case 5:
+        cout << "Este dia tienes precalculo, elementos y discreta";
+        break;
+    case 6:
+        cout << "Libre";
+        break;
+    case 7:
+        cout << "Libre";
+        break;
+    default:
+        break;
     }
 
     return 0;
