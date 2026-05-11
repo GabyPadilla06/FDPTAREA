@@ -2,26 +2,22 @@
 
 using namespace std;
 
-// Verifico y después hago
 int main()
 {
-    int contador = 1;
+    int contador = 2; 
     int numero;
     int suma = 0;
 
-    cout << "Ingrese un numero para iniciar el contador: ";
-    cin >> numero; // 1
+    cout << "Ingresa un numero: ";
+    cin >> numero;
 
-    // Ciclo while
     while (contador <= numero)
     {
-        if (contador % 2 == 0)
-        {
-            suma += contador;
-        }
-        contador++;
-        cout << "La suma de los numeros desde: " << numero << " es " << suma << endl; 
+        suma += contador;
+        contador += 2; 
     }
+
+    cout << "La suma de los numeros pares del 1 hasta " << numero << " es: " << suma << endl;
 
     return 0;
 }
