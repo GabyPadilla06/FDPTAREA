@@ -1,34 +1,27 @@
 #include <iostream>
-
 using namespace std;
 
-// Verifico y después hago
-int main()
-{
-
+int main() {
     int opcion;
 
-    cout << "¿Elige una opcion?" << endl;
-    cout << "-----------Menu-----------" << endl;
-    cout << "| 1. Suma       |" << endl;
-    cout << "| 2. Resta      |" << endl;
-    cout << "| 3. Potencia   |" << endl;
-    cout << "| 4. Salir       |" << endl;
-    cout << "Opcion: ";
-    cin >> opcion;
-
-    while (opcion != 4)
-    {
-        cout << "Imagina que aquí se hace la operacion que elegiste XD" << endl;
-        cout << "Si deseas salir o hacer otra operación elige otra opción" << endl;
-        cout << "-----------Menu-----------" << endl;
-        cout << "| 1. Suma       |" << endl;
-        cout << "| 2. Resta      |" << endl;
-        cout << "| 3. Potencia   |" << endl;
-        cout << "| 4. Salir      |" << endl;
+    do {
+        cout << "\n-----------Menu-----------" << endl;
+        cout << "| 1. Suma               |" << endl;
+        cout << "| 2. Resta              |" << endl;
+        cout << "| 3. Potencia           |" << endl;
+        cout << "| 4. Salir              |" << endl;
+        cout << "Opcion: ";
         cin >> opcion;
-    }
-    cout << "Bye, saliste del programa";
+
+        if (opcion >= 1 && opcion <= 3) {
+            cout << "Imagina que aqui se hace la operacion que elegiste." << endl;
+        } else if (opcion != 4) {
+            cout << "Opcion invalida. Intenta de nuevo." << endl;
+        }
+
+    } while (opcion != 4);
+
+    cout << "Bye, saliste del programa." << endl;
 
     return 0;
 }

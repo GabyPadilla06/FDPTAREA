@@ -12,7 +12,7 @@ int main(){
     while (numero >= 0)
     {
         cout << "Cuenta regresiva en: " << numero << endl;
-        numero--; // Incrementa el contador
+        numero--; 
     }
     
     
